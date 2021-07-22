@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building ${env.BUILD_ID}:${env.BUILD_NUMBER} on branch ${BRANCH}" >> file.txt
+                writeFile file: "file-${BRANCH}-${BUILD_NUBMER}", text: "${JOB_NAME} : ${BUILD_NUMBER}"
             }
         }
     }
