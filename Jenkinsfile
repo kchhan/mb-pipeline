@@ -12,9 +12,4 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            cleanWs()
-        }
-    }
 }
