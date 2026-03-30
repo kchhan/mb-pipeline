@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+    options {
+        durabilityHint('PERFORMANCE_OPTIMIZED') 
+    }
     environment {
         BRANCH = 'master'
     }
