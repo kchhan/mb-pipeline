@@ -4,8 +4,9 @@ pipeline {
     options {
         durabilityHint('PERFORMANCE_OPTIMIZED') 
     }
+
     environment {
-        BRANCH = 'master'
+        BRANCH = 'durability'
     }
 
     stages {
