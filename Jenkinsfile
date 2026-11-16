@@ -11,10 +11,5 @@ pipeline {
                 writeFile file: "file-${BRANCH}-${BUILD_NUMBER}.txt", text: "${JOB_NAME} : ${BUILD_NUMBER}"
             }
         }
-        stage('echo') {
-            steps {
-                sh 'echo "hello world7"'
-            }
-        }
     }
 }
