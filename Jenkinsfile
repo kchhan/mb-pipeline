@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 writeFile file: "file-${BRANCH}-${BUILD_NUMBER}.txt", text: "${JOB_NAME} : ${BUILD_NUMBER}"
+                echo 'Hello World 1"
             }
         }
     }
